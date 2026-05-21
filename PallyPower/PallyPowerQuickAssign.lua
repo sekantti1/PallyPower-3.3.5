@@ -285,8 +285,9 @@ local function PP_QA_HookMainFrame()
     PP_QA_CreateHoverFrame()
 
     local trigger = _G["PallyPowerAnchor"] or PallyPowerFrame
+	local _, class=UnitClass("player")
     trigger:HookScript("OnEnter", function()
-        if not InCombatLockdown() then
+        if not InCombatLockdown() and class =="PALADIN" then
             PP_QA_CancelHide()
             PP_QA_HoverFrame:Show()
         end
