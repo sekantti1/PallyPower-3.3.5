@@ -1,7 +1,7 @@
 ﻿## Interface: 30300
 ## Author: Aznamir
 ## Title: PallyPower
-## Version: v3.2.21
+## Version: v3.2.22
 ## Notes: Raid/Party Paladin buffs
 ## Notes-esES: Buffs de Paladín para Grupo/Banda
 ## Notes-zhCN: 圣骑士祝福管理
@@ -34,4 +34,5 @@ locale\zhTW.lua
 PallyPower.lua
 PallyPowerValues.lua
 PallyPowerOptions.lua
+PallyPowerQuickAssign.lua
 PallyPower.xml
