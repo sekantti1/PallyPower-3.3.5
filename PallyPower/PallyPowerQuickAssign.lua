@@ -263,10 +263,6 @@ local function PP_QA_CreateHoverFrame()
             GameTooltip:SetOwner(btn, "ANCHOR_BOTTOM")
             GameTooltip:ClearLines()
             GameTooltip:AddLine(tipText, 1, 1, 1, true)
-            if GameTooltipTextLeft1 then
-                GameTooltipTextLeft1:SetFont(
-                    "Fonts\\FRIZQT__.TTF", 10, "OUTLINE")
-            end
             GameTooltip:Show()
         end)
         btn:SetScript("OnLeave", function()
