@@ -270,7 +270,12 @@ local function PP_QA_CreateHoverFrame()
             PP_QA_ScheduleHide()
         end)
         btn:SetScript("OnClick", function()
-            PP_QA_ApplyModeAll(mode)
+            local localName = UnitName("player")
+            if localName then
+                PP_QA_ApplyMode(localName, mode)
+                PallyPower:UpdateLayout()
+                PallyPowerConfigGrid_Update()
+            end
         end)
     end
 
